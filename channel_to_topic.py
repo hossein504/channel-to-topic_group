@@ -7,6 +7,7 @@ api_id = 111111 #api id
 phone_number = "+9890000000" #shomare
 from_chat_id = 111111 #chat id ke az aan ersal shavad
 to_chat_id = 111111 #chat id ke be aan ersal shavad
+reng = 100 #tedad payam haii ke mikhaid forward konid
 
 
 app = Client("meysam", api_id, api_hash)
@@ -25,7 +26,7 @@ async def channel(c:Client, m:Message):
         # in ghesmat niazi be dar ovordan az comment nisst(serfan baraye kasani ke baladan)
         # async for message in app.get_chat_history(-1001978825114):
         #     print(message.text)
-        for i in range(1000): 
+        for i in range(reng): 
             try:
                 print(i)
                 await app.copy_message(to_chat_id, from_chat_id, i, reply_to_message_id=16)

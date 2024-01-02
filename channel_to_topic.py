@@ -28,7 +28,6 @@ async def channel(c:Client, m:Message):
         #     print(message.text)
         for i in range(reng): 
             try:
-                print(i)
                 await app.copy_message(to_chat_id, from_chat_id, i, reply_to_message_id=16)
                 #tozihat in ghesmat dar: https://github.com/hossein504/channel-to-topic_group
             except:
